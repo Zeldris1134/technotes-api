@@ -30,7 +30,7 @@ const login = asyncHandler(async (req, res) => {
                 "roles": foundUser.roles
             }
         },
-        process.env.Access_TOKEN_SECRET,
+        process.env.ACCESS_TOKEN_SECRET,
         { expiresIn: '15m' }
     )
 
